@@ -41,7 +41,7 @@ const Complainn = () => {
         const newcomplain = {title,issue,name,programme,HMC,Room};
         setPending(true);
 
-        fetch('http://localhost:8001/complains' , {
+        fetch('https://barak-db.onrender.com/complains' , {
             method: 'POST',
             headers: { "Content-Type":"application/json" } ,
             body: JSON.stringify(newcomplain)

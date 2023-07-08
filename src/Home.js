@@ -7,7 +7,7 @@ import useFetch from './useFetch.js';
 // import { useEffect } from 'react';
 
 const Home = () => {
-    const { data: complains, ispending, err } = useFetch('http://localhost:8001/complains');
+    const { data: complains, ispending, err } = useFetch('https://barak-db.onrender.com/complains');
 
     
     return (

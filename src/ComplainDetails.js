@@ -4,18 +4,17 @@ import useFetch from './useFetch';
 const ComplainDetails = () => {    
 
     const { id } = useParams();
-    const { data: complain, err, isPending } = useFetch('http://localhost:8001/complains/' + id);
+    const { data: complain, err, isPending } = useFetch('https://barak-db.onrender.com/complains/' + id);
     const navigate = useNavigate();
 
     // const history = useHistory;
 
     const handleClick = () => {
         //use double quotes
-        fetch("http://localhost:8001/complains/" + complain.id, {
+        fetch("https://barak-db.onrender.com/complains" + complain.id, {
             method: 'DELETE'
         }).then(() => {
             navigate("/"); 
-
         })
     }
 
