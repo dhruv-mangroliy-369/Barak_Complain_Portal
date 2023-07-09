@@ -11,7 +11,7 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="hostelname">
                 <div id="logo"><img src={logo} alt='' /></div>
-                <h1>Barak complain Portal</h1>
+                <h1>ComplainEase</h1>
             </div>
             <div className="links">
                 <Link to="/">Home</Link>
