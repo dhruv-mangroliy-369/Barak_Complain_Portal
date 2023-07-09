@@ -15,8 +15,7 @@ const Home = () => {
             <div className="home">
 
                 {err && <div>{err}</div>}
-                {ispending && <div><h2><b>"Loading..."</b></h2></div>}
-                {ispending && <div><h2>"It may take 30 to 40 seconds to load."</h2></div>}
+                {ispending && <div><h2><b>"Loading..."</b></h2></div> &&<div><h4>"It may take 30 to 40 seconds to load."</h4></div>}
                 {!ispending && <>
                     <div className="card" >
                         <ul className="list-group list-group-flush">
