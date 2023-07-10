@@ -11,7 +11,7 @@ const ComplainDetails = () => {
 
     const handleClick = () => {
         //use double quotes
-        fetch('https://barak-db.onrender.com/complains' + complain.id, {
+        fetch('https://barak-db.onrender.com/complains/' + complain.id, {
             method: 'DELETE'
         }).then(() => {
             navigate("/"); 
